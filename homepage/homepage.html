@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.google.com/specimen/Fjalla+One#standard-styles" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>STAR PLATINUM</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">STAR PLATINUM</div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn" />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <label for="btn-1" class="show">Movies +</label>
+          <a href="/moviepage/index.html">Movies</a>
+          <input type="checkbox" id="btn-1" />
+          <ul>
+            <li><a href="/moviepage/index.html#tamil">Tamil</a></li>
+            <li><a href="/moviepage/index.html#malayalam">Malayalam</a></li>
+            <li><a href="/moviepage/index.html#english">English</a></li>
+          </ul>
+        </li>
+        <li>
+          <label for="btn-2" class="show">Services +</label>
+          <a href="#">Series</a>
+          <input type="checkbox" id="btn-2" />
+          <ul>
+            <li><a href="/moviepage/index.html#anime">Anime</a></li>
+            <li><a href="/moviepage/index.html#live">Live-action</a></li>
+            <li></li>
+          </ul>
+        </li>
+        <li><a href="/loginpage/index.html">Login</a></li>
+        <li><a href="/about_us/aboutus.html">About us</a></li>
+        <li><a href="/plans.html">Subscribe</a></li>
+      </ul>
+    </nav>
+    <section>
+      <video src="bgclip.mkv" autoplay muted loop></video>
+
+      <div class="content">
+        <div class="textbox">
+          <h1 style="letter-spacing: 2px; font-family: 'Teko', sans-serif">
+            Where the movies come to you
+          </h1>
+          <p style="font-size: 20px">
+            Sneak a look into the cinematic universe
+          </p>
+        </div>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/AmritaUniversity"
+            ><img src="images/fb.png" id="facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/amritacoimbatorecampus/"
+            ><img src="images/insta.png" id="instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/AmritaUniversity"
+            ><img src="images/youtube.png" id="youtube"
+          /></a>
+        </li>
+      </ul>
+      <div class="imgBox">
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/archer.jpg" /></div>
+            <div class="swiper-slide">
+              <img src="images/black panther.jpg" />
+            </div>
+            <div class="swiper-slide"><img src="images/mandolarian.jpg" /></div>
+            <div class="swiper-slide"><img src="images/starwars.jpg" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        //  loop: true,
+      });
+    </script>
+  </body>
+</html>

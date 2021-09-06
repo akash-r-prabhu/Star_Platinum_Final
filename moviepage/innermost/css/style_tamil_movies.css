@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+html 
+  {
+    /* background-image: url(https://i.pinimg.com/originals/1f/3d/85/1f3d85148ab183f085a42b5649069499.jpg); */
+    font-family: fantasy;
+    overflow-x:hidden;
+  }
+.navbar 
+  {
+    position: relative;
+  }
+#logo
+  {
+    
+    margin-top: 50px;
+    margin-left: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+  }
+img:hover
+  {
+      transform: scale(1.1);
+  }
+#mode_change_button
+  {
+    background-color:rgb(65,55,55);
+    color: white;
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+  }
+a 
+  {
+    color: black;
+    text-decoration: none;
+  }
+.movie_tile 
+  {
+    float: left;
+    padding-left: 20%;
+  }
+
+.movie_tile img
+  {
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(255, 0, 0);
+
+  }
+.movie_tile img:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+h3
+{
+  margin-left: 15%;
+}
+.clearfix::after 
+  {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ h1 
+  {
+    position: relative;
+    left: 43%;
+    margin: auto;
+    /* float: left; */
+    color: black;
+  } 
+ul
+  {
+    list-style: none;
+    float: right;
+  }
+
+
+
+
+/* #view_change_buttons{
+    position: relative;
+    float: right;
+    right: 40px;
+} */
+
+/* #light_mode_button,
+#dark_mode_button {
+  position: relative;
+  left: 75%;
+  top: 75%;
+} */

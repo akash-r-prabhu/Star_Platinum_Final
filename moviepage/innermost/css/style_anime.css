@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+html 
+  {
+    /* background-image: url(https://i.pinimg.com/originals/1f/3d/85/1f3d85148ab183f085a42b5649069499.jpg); */
+    font-family: fantasy;
+  }
+.navbar 
+  {
+    position: relative;
+  }
+#logo
+  {
+    margin-left: 2%;
+    margin-top: 2%;
+    position: relative;
+    border: solid white;
+    width: 75px;
+    height: 75px;
+    border-radius: 15%;
+  }
+  img:hover
+  {
+      transform: scale(1.1);
+      transition: all 1s;
+  }
+#mode_change_button
+  {
+   
+    background-color:white;
+    color: black;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: bold;
+  }
+a 
+  {
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+  }
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.movie_tile 
+  {
+    float: left; 
+    padding: 3px;
+    margin-left: 15%;
+    margin-right: auto; 
+    display: block;
+
+  }
+    
+  
+/* .movie_tile img:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+  } */
+.movie_tile img
+  {
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(165, 25, 165);
+    margin-left: 50%;
+    margin-right: 20px; 
+    
+  
+    
+  }
+
+.clearfix::after 
+  {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ h1 
+  {
+    position: relative;
+    left: 45%;
+    margin: auto;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    /* float: left; */
+    color: rgb(255, 255, 255);
+  } 
+  h2 
+  {
+    position: relative;
+    left: 45%;
+    margin: auto;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    /* float: left; */
+    color: rgb(255, 255, 255);
+  }  
+  h3 
+  {
+    
+    text-align: center;
+    left: 45%;
+    margin-left: 85%;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    /* float: left; */
+    color: rgb(255, 255, 255);
+  } 
+ul
+  {
+    list-style: none;
+    float: right;
+  }
+
+
+
+
+/* #view_change_buttons{
+    position: relative;
+    float: right;
+    right: 40px;
+} */
+
+/* #light_mode_button,
+#dark_mode_button {
+  position: relative;
+  left: 75%;
+  top: 75%;
+} */

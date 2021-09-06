@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <title>Indru Netru Naalai</title>
+</head>
+<style>
+
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("inn1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+nav{
+  background: #1b1b1b;
+  max-height: 70px;
+  font-family: 'Poppins', sans-serif;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo{
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+nav ul li
+{
+  float: left;
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: cyan;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+  z-index: 1;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 170px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+.logo
+  {
+    position: relative;
+    margin-left: 2%;
+    height: 100px;
+    border-radius: 15%;
+  }
+.movie-title
+{
+    margin: 6%;
+    font-size: 30px;
+    color: #fff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.p1
+{
+    font-size: 20px;
+    line-height: 200%;
+    /*margin-right: 45%;*/
+}
+.p2
+{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+}
+.p3
+{
+    font-size: 22px;
+    font-style: normal;
+    font-family:'Times New Roman', Times, serif;
+    margin-right: 35%;
+}
+.casting img
+{
+    width: 85px;
+    height: 85px;
+    box-shadow: rgb(0, 0, 0);
+    /*margin-right: 50px;*/
+}
+p,a
+{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+.cast
+{
+    float: left;
+    position: relative;
+    padding: 3%;
+}
+.trail
+{
+    margin-left: 6%;
+    font-size: 20px;
+    color: #fff;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.trail1
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.gen
+{
+    font-size: 24px;
+    color: #fff;
+    font-family:'Times New Roman', Times, serif;
+}
+/*.button
+{
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.button:hover
+{
+    color: rgb(192, 98, 255);
+    background:rgb(255, 100, 100);
+}*/
+.button2
+{
+  text-decoration: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    letter-spacing: 1px;
+    background-color:rgb(223, 35, 35);
+    font-style: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    display: flex;
+}
+
+
+
+/*.button:hover
+{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}*/
+
+/*.button
+{
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color:rgb(122, 14, 14);
+    font-style: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}*/
+.button2:hover 
+{
+  box-shadow: 0 12px 16px 0 rgba(255, 198, 11, 0.24),0 17px 50px 0 rgba(255, 212, 23, 0.19);
+  background: rgb(19, 128, 37);
+}
+
+.thumbnail img
+{
+    height: auto;
+    width: 500px;
+    text-align: left;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-left: 0%;
+    box-shadow: rgb(0, 0, 0) -5px 5px 6px 0;
+    
+}
+h2
+{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+}
+.h2
+{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+}
+.rat
+{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+.review
+{
+    color: rgb(255, 194, 124);
+    margin-left: 6%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+#ratings_tile
+{
+    margin-top: 0%;
+}
+
+.checked
+{
+  color: orange;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: black;
+}
+
+
+
+.button:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+
+.button span {
+    position: absolute;
+    display: block;
+}
+
+
+
+
+.button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+
+
+}
+
+
+
+.button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+
+.button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+
+.button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+
+.button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+</style>
+<body>
+    <nav>
+        <div class="logo">STAR PLATINUM</div>
+        <label for="btn" class="icon">
+          <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+          <li><a href="/homepage/homepage.html">Home</a></li>
+          <li>
+            <label for="btn-1" class="show">Movies +</label>
+            <a href="/moviepage/index.html">Movies</a>
+            <input type="checkbox" id="btn-1">
+            <ul>
+              <li><a href="/moviepage/index.html#tamil">Tamil</a></li>
+              <li><a href="/moviepage/index.html#malayalam">Malayalam</a></li>
+              <li><a href="/moviepage/index.html#english">English</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="btn-2" class="show">Services +</label>
+            <a href="#">Series</a>
+            <input type="checkbox" id="btn-2">
+            <ul>
+              <li><a href="/moviepage/index.html#anime">Anime</a></li>
+              <li><a href="/moviepage/index.html#live">Live-action</a></li>
+              <li>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/loginpage/index.html">Login</a></li>
+          <li><a href="/about_us/aboutus.html">About us</a></li>
+          <li><a href="/plans.html">Subscribe</a></li>
+        </ul>
+      </nav>
+    <!-- <div class="container">
+        <a href="../../html/index.html"><img src="../../images/logo.jpeg" class="logo"></a>
+    </div>     -->
+    <div class="container movie-title">
+        <h1 style="text-shadow: 2px 2px rgb(91, 6, 148);font-style: italic;">INDRU NETRU NAALAI</h1>
+        <hr style="height:5px;border-width:0;color:rgb(247, 243, 243);background-color:rgb(185, 7, 7)"/>
+        <br/>
+        <table style="width:100%;column-gap: 10%;" >
+            <tr>
+                <td style="column-width: 50%;padding-right: 5%;font-style: italic;">
+                    <p class="p1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indru Netru Naalai is a 2015 Indian Tamil-language science fiction comedy film written and <br>directed by R. Ravikumar in his debut feature. 
+                        The film is jointly produced by <br>Thirukumaran Entertainment and Studio Green, and 
+                        features Vishnu Vishal and Miya <br>in the lead while Karunakaran, T. M. Karthik, P. Ravi Shankar and Jayaprakash play supporting roles.<br/> <br/>Elango and his astrologer friend Pulivetti Arumugam come in possession of a time machine and start profiting from it. However, their meddling with time prevents the death of a gangster, who begins to wreck havoc in their lives.
+                    </p>
+                </td>
+
+                
+                <td>
+                    <div class="thumbnail">
+                        <img src="poster.jpg" alt="Poster" position="relative" >
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <br/>
+        <br/>
+        <div class="p1"> 
+            <table width=100% style="column-gap: 10%;">
+                <tr>
+                    <td>
+                        <p2 style="font-size: 30px;color: #fff;">CAST</p2>
+                        <br/>
+                        <br/>
+                        <div class="casting">
+                            <a class ="cast" href="https://www.imdb.com/name/nm3684167/"><img src="cast/1.jpg" title="Vishnu Vishal"><p style="width: 80px; text-align: center;">Vishnu Vishal</p></a>
+                            <a class ="cast" href="https://www.imdb.com/name/nm5369429/"><img src="cast/2.jpg" title="Karunakaran"><p style="width: 80px; text-align: center;">Karunakaran</p></a>
+                            <a class ="cast" href="https://www.imdb.com/name/nm5573352/"><img src="cast/3.jpg" title="Miya"><p style="width: 80px; text-align: center;">Mia George</p></a>
+                            <a class ="cast" href="https://www.imdb.com/name/nm1951127/"><img src="cast/4.jpg" title="Arya"><p style="width: 80px; text-align: center;">Arya</p></a>    
+                        </div>
+
+                    </td>
+
+                    <td width="500px">
+                        <div class="h2" id="ratings_tile">
+                            <p style="color: #fff;font-size: 30px;" >RATING</p>
+                            <br/>
+                            <p style="padding-left: 20%;font-size: 30px;">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span style="color: #fff;" class="fa fa-star"></span>
+                                <span style="color: #fff;" class="fa fa-star"></span>
+                                <br/>
+                            </p>
+                                &nbsp;&nbsp;&nbsp;   
+                            <p class="rat" style="color: #fff;font-style: normal;font-size:30px;padding-left: 25%;">3/5</p>
+                            <br/>
+                            <br/>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>   
+            <br/>
+            <br/>
+            <table width=100%  style="column-gap: 10%;">
+                <tr>
+                    <td>
+                        <p class="gen"><span style="font-weight: bold;font-size: 30px;"><br/>GENRE </span><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Comedy,Science Fiction,Thriller
+                    </td>
+
+                    <td width="500px" style="padding-left: 12%;">
+                        <div class="h2" id="ratings_tile">
+                            <a class = "button" href="https://www.youtube.com/watch?v=A70onhL1H_k" id="button1" target="_blank">
+                              <span></span>
+                              <span></span>
+                              <span></span>Watch Now</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>  
+            
+        </div>
+
+
+        </p>
+        <br/>
+        <br/>
+        <br/>
+        <h1 class="trail1">TRAILER</h1>
+        <iframe class="trail1" width="640px" height="420px" style="padding: 5%;" src="https://www.youtube.com/embed/6YnVOsmfBQU" title= "Indru Netru Naalai Trailer" frameborder="0"
+        allowfullscreen></iframe>
+        <br> 
+        <h2 style="color: #fff;">AUDIENCE REVIEWS</h2>
+        <br>
+        <hr style="height:5px;margin-right: 30%;border-width:0;color:rgb(247, 243, 243);background-color:rgb(185, 7, 7)"/>
+        <br>
+        <div class="container review">
+            <p class="p3" style="font-style: italic;">Despite the boring first half, the film picks up speed in the second half. Credit should be given to the director for handling such a mind bending concept 
+                so simply and humorously.<br> The performances of the actors made their presence completely felt. The graphics isn't that advanced and 
+                could have been done it more effectively if they had afforded.<br> All in all, the film stands apart from the regular tamil movies.
+            </p>
+            <br/>
+        </div>
+        <hr style="height:5px;margin-left:6%;margin-right: 30%;border-width:0;color:rgb(247, 243, 243);background-color:rgb(185, 7, 7)"/>
+        <br/>
+        <div class="container review">
+            <p class="p3" style="font-style: italic;">This movie has such a well constructed core that makes it very simple to watch even though it is a story about time travel. 
+                It got me excited to write a review for it. <br>I congratulate and adore the filmmakers who've given the audience(comprising of a wide range of them) 
+                such a beautifully <br>scripted narrative, laying out scenes without any hassle.
+                <br/>
+            </p>
+        </div>
+        <br/>
+        <hr style="height:5px;margin-right: 30%;border-width:0;color:rgb(247, 243, 243);background-color:rgb(185, 7, 7)"/>
+
+        <br/>
+        <form>
+            <label><h2 style="color: #fff;">DROP YOUR REVIEW</h2></label>
+            <br/>
+            <textarea class="container p3" name="review" rows="2" cols="50" style="padding: 2%;text-align: center;color: rgb(0, 0, 0);margin-left: 6%;" placeholder="Tell us your experience about Indru Netru Naalai"></textarea>
+            <br><br>
+            <p style="position: relative;padding-left:21%;"><input class="button2" type="submit" value="Submit"></p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+/* html{
+    background-color: black;
+} */
+.clearfix::after 
+  {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.navbar > p 
+    {
+        font-size: 30px;
+        margin: auto;
+    }
+.movies_tile
+{
+    float: left;
+}
+
+.series_tile
+{
+    float: left;
+    padding-left: 23%;
+}
+.movies_tile img
+    {
+        margin-left: 62%;
+        margin-right: 190px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(37, 230, 255);
+        transition: 1s;
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+.series_tile img
+    {
+    /*margin-left: 100%;*/
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(92, 142, 170);
+    transition: 1s;
+    }
+p
+{
+    font-size: 25px;
+    margin-left: 75%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.p2
+{
+    margin-left: 35%;
+}
+#logo
+    {
+        margin-top: 50px;
+        margin-left: 100px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        width: 70px;
+        height: 70px;
+    
+    }
+#main_header
+    {
+        font-size: 45px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: -70px;
+       /* display:inline; */
+         margin-left: 10%;
+        text-shadow: 2px 2px rgb(37, 230, 255);
+    }
+a 
+    {
+      color: black;
+      text-decoration: none;
+    }
+
+body h2
+    {
+        font-size: 30px;
+        text-align: center;
+        /*margin-left: 45%;*/
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+ul
+    {
+      list-style: none;
+      float: right;
+    }
+#mode_change_button
+    {
+      background-color:rgb(65,55,55);
+      color: white;
+      width: 400px;
+      height: 50px;
+      border-radius: 20px;
+    }
+    footer {
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding:0.5em;
+        font-size: 2em;
+        background-color: rgba(87, 93, 121, 0.9);
+        color: rgb(0, 0, 0);
+        text-shadow: 0.5px 0.5px rgb(116, 252, 241);
+      }

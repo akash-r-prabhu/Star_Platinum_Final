@@ -1,0 +1,397 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>MOVIES</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">STAR PLATINUM</div>
+        <label for="btn" class="icon">
+          <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+          <li><a href="/homepage/homepage.html">Home</a></li>
+          <li>
+            <label for="btn-1" class="show">Movies +</label>
+            <a href="#">Movies</a>
+            <input type="checkbox" id="btn-1">
+            <ul>
+              <li><a href="#tamil">Tamil</a></li>
+              <li><a href="#malayalam">Malayalam</a></li>
+              <li><a href="#english">English</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="btn-2" class="show">Services +</label>
+            <a href="#">Series</a>
+            <input type="checkbox" id="btn-2">
+            <ul>
+              <li><a href="#anime">Anime</a></li>
+              <li><a href="#live">Live-action</a></li>
+              <li>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/loginpage/index.html">Login</a></li>
+          <li><a href="/about_us/aboutus.html">About us</a></li>
+          <li><a href="/plans.html">Subscribe</a></li>
+          <li><div class="toggle">
+            <i class="fas fa-moon toggle-icon"></i>
+            <i class="fas fa-sun toggle-icon"></i>
+            <div class="toggle-ball"></div>
+        </div></li>
+        </ul>
+       
+      </nav>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background:linear-gradient(to bottom,  rgba(0,0,0,0), #151515), url('img/tenet.jpg');">
+                <!-- <div id="videosList">       
+                    <div class="video">
+                        <video class="thevideo" loop preload="none">
+                          <source src="/img/bgclip.mkv" type="video/mkv" >
+                        </video>
+                      </div>
+                    </div> -->
+                    <!-- <h1 class="featured-title1">TENET</h1> -->
+                <img class="featured-title" src="img/tenet1.png" alt="">
+                <p class="featured-desc">When a few objects that can be manipulated and used as weapons in the future 
+                    fall into the wrong hands, a CIA operative, known as the Protagonist, must save the world.<br></p>
+                    <video src="tenet.mkv" class="vid" autoplay muted loop></video>
+                    <button class="featured-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        WATCH</button>
+                
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">UPCOMING MOVIES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Venom 2</span>
+                            <p class="movie-list-item-desc">Venom: Let There Be Carnage is an upcoming American superhero film featuring the Marvel Comics
+                                 character Venom, produced by Columbia Pictures in association with Marvel and Tencent Pictures</p>
+                            <button class="movie-list-item-button">Add to watchlist</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/whatif.png" alt="">
+                            <span class="movie-list-item-title">What If...?</span>
+                            <p class="movie-list-item-desc">What If...? is an upcoming American animated anthology series created by A.C. Bradley for the streaming 
+                                service Disney+,based on the Marvel Comics series.</p>
+                            <button class="movie-list-item-button">Add to watchlist</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/omitb.png" alt="">
+                            <span class="movie-list-item-title">OMITB</span>
+                            <p class="movie-list-item-desc">Only Murders in the Building is an upcoming American comedy television series, created by Steve Martin and John Hoffman. 
+                                </p>
+                            <button class="movie-list-item-button">Add to watchlist</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/hall.png" alt="">
+                            <span class="movie-list-item-title">Halloween Kills</span>
+                            <p class="movie-list-item-desc">Halloween Kills is an upcoming American slasher film directed by David Gordon Green and written by Green, 
+                                Danny McBride and Scott Teems.</p>
+                            <button class="movie-list-item-button">Add to watchlist</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/mav.png" alt="">
+                            <span class="movie-list-item-title">Top Gun</span>
+                            <p class="movie-list-item-desc">Top Gun: Maverick is an upcoming American action drama film directed by Joseph Kosinski from a screenplay
+                                 by Ehren Kruger, a story by Peter Craig and Justin Marks</p>
+                            <button class="movie-list-item-button">Add to watchlist</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/saint.png" alt="">
+                            <span class="movie-list-item-title">TMSON</span>
+                            <p class="movie-list-item-desc">The Many Saints of Newark is an upcoming American crime drama film 
+                                directed by Alan Taylor as a prequel to Chase's HBO crime drama series The Sopranos.</p>
+                            <button class="movie-list-item-button">Add to watchlist</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/spide.png" alt="">
+                            <span class="movie-list-item-title">Spiderman</span>
+                            <p class="movie-list-item-desc">Spider-Man: No Way Home is an upcoming American superhero film based on the Marvel Comics character Spider-Man, 
+                               and distributed by Sony Pictures Releasing. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow" style="margin-top: 5%;"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title" id="tamil">TAMIL MOVIES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/t2post.jpg" alt="">
+                            <span class="movie-list-item-title">SADHURANGA VETTAI</span>
+                            <p class="movie-list-item-desc">Gandhi, a skilled con man, successfully pulls off several high-profile scams. A group of people, whom he had cheated, get together to trap him to settle scores</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/TamMov2/SV.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/t1post.jpg" alt="">
+                            <span class="movie-list-item-title">INDRU NETRU NAALAI</span>
+                            <p class="movie-list-item-desc">When Elango and Pulivetti find a time machine, they decide to use it for their benefit. While meddling with time, they prevent a gangster's death and this lands them in trouble.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/TamMov1/indru netru naalai.html" >Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/maanagaram.jpg" alt="">
+                            <span class="movie-list-item-title">MAANAGARAM</span>
+                            <p class="movie-list-item-desc">A City based thriller that travels on the Hyperlink plot connecting the four youngsters from the different walks of lives. Maanagaram will focalize upon Chennai city as one of the major characters in this film, where the backdrops would indeed become a prominent ingredient of this tale.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/TamMov1/indru netru naalai.html" >Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/jigarthanda.jpg" alt="">
+                            <span class="movie-list-item-title">JIGARTHANDA</span>
+                            <p class="movie-list-item-desc">An aspiring director tries his best to make a violent gangster film. His discreet attempts to research a gangster fail miserably. He discovers a mole in the gang and things go out of control for him.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/TamMov1/indru netru naalai.html" >Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/vikramvedha.jpg" alt="">
+                            <span class="movie-list-item-title">VIKRAM VEDHA</span>
+                            <p class="movie-list-item-desc">Vikram, a pragmatic policeman, and his partner Simon are on the hunt to capture Vedha. When Vedha voluntarily surrenders, he offers to tell Vikram a story, throwing Vikram's life into disarray.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/TamMov1/indru netru naalai.html" >Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/kaithi.png" alt="">
+                            <span class="movie-list-item-title">KAITHI</span>
+                            <p class="movie-list-item-desc">Dilli, an ex-convict, endeavours to meet his daughter for the first time after leaving prison. However, his attempts are interrupted due to a drug raid planned by Inspector Bejoy.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/TamMov1/indru netru naalai.html" >Watch</button></a>
+                        </div>
+                    
+                        
+                    </div>
+                    <i class="fas fa-chevron-right arrow" style="margin-top: 5%;"></i>
+                </div>
+            </div>
+            
+            <div class="movie-list-container">
+                <h1 class="movie-list-title" id="english">ENGLISH MOVIES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/e1post.jpg" alt="">
+                            <span class="movie-list-item-title">ANTMAN</span>
+                            <p class="movie-list-item-desc">Forced out of his own company by former protégé Darren Cross, Dr. Hank Pym  recruits the talents of Scott Lang, a master thief just released from prison. Lang becomes Ant-Man, trained by Pym and armed with a suit that allows him to shrink in size, possess superhuman strength and control an army of ants. The miniature hero must use his new skills to prevent Cross from perfecting the same technology and using it as a weapon for evil.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/EngMov1/ant man.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/e2post.jpg" alt="">
+                            <span class="movie-list-item-title">21 JUMP STREET</span>
+                            <p class="movie-list-item-desc">When cops Schmidt and Jenko join the secret Jump Street unit, they use their youthful appearances to go under cover as high-school students. They trade in their guns and badges for backpacks, and set out to shut down a dangerous drug ring. But, as time goes on, Schmidt and Jenko discover that high school is nothing like it was just a few years earlier -- and, what's more, they must again confront the teenage terror and anxiety they thought they had left behind.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/EngMov2/21jumpstreet.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/avengers.jpg" alt="">
+                            <span class="movie-list-item-title">AVENGERS: INFINITY WAR</span>
+                            <p class="movie-list-item-desc">Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/EngMov2/21jumpstreet.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/joker.jpg" alt="">
+                            <span class="movie-list-item-title">JOKER</span>
+                            <p class="movie-list-item-desc">Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City. Arthur wears two masks -- the one he paints for his day job as a clown, and the guise he projects in a futile attempt to feel like he's part of the world around him. Isolated, bullied and disregarded by society, Fleck begins a slow descent into madness as he transforms into the criminal mastermind known as the Joker.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/EngMov2/21jumpstreet.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/inception.jpg" alt="">
+                            <span class="movie-list-item-title">INCEPTION</span>
+                            <p class="movie-list-item-desc">Dom Cobb (Leonardo DiCaprio) is a thief with the rare ability to enter people's dreams and steal their secrets from their subconscious. His skill has made him a hot commodity in the world of corporate espionage but has also cost him everything he loves. Cobb gets a chance at redemption when he is offered a seemingly impossible task: Plant an idea in someone's mind. If he succeeds, it will be the perfect crime, but a dangerous enemy anticipates Cobb's every move.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/EngMov2/21jumpstreet.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/jlsyndercut.jpg" alt="">
+                            <span class="movie-list-item-title">ZACK SNYDER'S JUSTICE LEAGUE</span>
+                            <p class="movie-list-item-desc">Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne enlists newfound ally Diana Prince to face an even greater threat. Together, Batman and Wonder Woman work quickly to recruit a team to stand against this newly awakened enemy. Despite the formation of an unprecedented league of heroes -- Batman, Wonder Woman, Aquaman, Cyborg and the Flash -- it may be too late to save the planet from an assault of catastrophic proportions.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/EngMov2/21jumpstreet.html">Watch</button></a>
+                        </div>
+
+                        
+                    </div>
+                    <i class="fas fa-chevron-right arrow" style="margin-top: 5%;"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title" id="malayalam">MALAYALAM MOVIES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/ezra_poster.jpeg" alt="">
+                            <span class="movie-list-item-title">EZRA</span>
+                            <p class="movie-list-item-desc">Priya and Ranjan have paranormal experiences after she buys an antique box from a dealer. They learn that the box is a dybbuk and take the help of a rabbi to learn its history.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/MalMov3/ezra.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/angamali_poster.jpeg" alt="">
+                            <span class="movie-list-item-title">ANGAMALY DIARIES</span>
+                            <p class="movie-list-item-desc">Vincent Pepe, a boisterous young man, gets involved in the world of crime after he loses his temper and acts irrationally during a dispute with a rival business group.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/MalMov1/angamali_diaries.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/odiyan_poster.jpeg" alt="">
+                            <span class="movie-list-item-title">ODIYAN</span>
+                            <p class="movie-list-item-desc">Manikyan, a notorious shape-shifter, returns to his village after an exile of 15 years. His arrival causes much unease to the villagers, especially Ravunni Nair, who has a personal grudge against him.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/MalMov2/odiyan.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/trance.jpg" alt="">
+                            <span class="movie-list-item-title">TRANCE</span>
+                            <p class="movie-list-item-desc">A motivational speaker, Viju Prasad, followed by the suicide of his mentallty ill brother Kunjan, moves to Mumbai for better opportunities. While searching, Viju is hired by a pseudo corporate duo, Solom and Isaac, who plans to mint money out of people's blind beliefs to religion.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/MalMov3/ezra.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/drishyam2.jpg" alt="">
+                            <span class="movie-list-item-title">DRISHYAM II</span>
+                            <p class="movie-list-item-desc">Georgekutty, a cinema hall owner, thrives in life but is a changed man. However, when his family gets entangled in a criminal investigation, he must protect them from the legal institution yet again.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/MalMov3/ezra.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Ayyappanum_Koshiyum_Poster.jpg" alt="">
+                            <span class="movie-list-item-title">AYYAPPANUM KOSHIYUM</span>
+                            <p class="movie-list-item-desc">Police officer Ayyappan is an upright man who always strives to do the right thing. Things change when a retired army havildar, Koshy, settles in his village and the two egos clash.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/MalMov3/ezra.html">Watch</button></a>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow" style="margin-top: 5%;"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-2.jpg');">
+                <img class="featured-title1" src="img/f-t-2.png" alt="">
+                <p class="featured-desc">When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured 
+                    relationships that exist among four families as they search for the kids.</p>
+                    <video src="dark.mp4" class="vid" autoplay muted loop></video>
+                <button class="featured-button"><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    WATCH</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title" id="anime">ANIME</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/jujutsu kaisen.png" alt="">
+                            <span class="movie-list-item-title">JUJUTSU KAISEN</span>
+                            <p class="movie-list-item-desc">The story follows high school student Yuji Itadori as he joins a secret organization of Jujutsu Sorcerers in order to kill a powerful Curse named Ryomen Sukuna, of whom Yuji becomes the host.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/Ani1/jujutsukaisen.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/demon slayer.jpg" alt="">
+                            <span class="movie-list-item-title">DEMON SLAYER</span>
+                            <p class="movie-list-item-desc">
+                                The story takes place in Taishō-era Japan. It follows Tanjiro Kamado and his sister Nezuko Kamado as they seek a cure for Nezuko's demon curse. Tanjiro and Nezuko become entangled in the affairs of a secret society, known as the Demon Slayer Corps, that has been waging a secret war against demons for centuries.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/Ani2/demonslayer.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/parasyte.jpg" alt="">
+                            <span class="movie-list-item-title">PARASYTE: THE MAXIM</span>
+                            <p class="movie-list-item-desc">
+                                The series follows Shinichi Izumi, a high school boy whose right hand becomes possessed by an alien Parasite named Migi, finding himself in a battle against other Parasites who feast on other humans. The series was simulcast by Crunchyroll outside of Asia and by Animax Asia in Southeast Asia and South Asia.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/Ani2/demonslayer.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/aot.jpg" alt="">
+                            <span class="movie-list-item-title">ATTACK ON TITAN</span>
+                            <p class="movie-list-item-desc">
+                                The plot of Attack on Titan centers on a civilization inside three walls, the last location where humans still live. Over one hundred years ago, humanity was driven to the brink of extinction after the emergence of humanoid giants called Titans, who attack and eat humans on sight.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/Ani2/demonslayer.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/jojo.jpeg" alt="">
+                            <span class="movie-list-item-title">JOJO'S BIZZARE ADVENTURE</span>
+                            <p class="movie-list-item-desc">
+                                The story of the Joestar family, who are possessed with intense psychic strength, and the adventures each member encounters throughout their lives. Chronicles the struggles of the cursed Joestar bloodline against the forces of evil.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/Ani2/demonslayer.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/naruto.jpg" alt="">
+                            <span class="movie-list-item-title">NARUTO</span>
+                            <p class="movie-list-item-desc">
+                                Naruto Uzumaki is a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/Ani2/demonslayer.html">Watch</button></a>
+                        </div>
+
+                    </div>
+                    <i class="fas fa-chevron-right arrow" style="margin-top: 5%;"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title" id="live">LIVE-ACTION</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/s1post.jpeg" alt="">
+                            <span class="movie-list-item-title">BREAKING BAD</span>
+                            <p class="movie-list-item-desc">Set in Albuquerque, New Mexico, between 2008 and 2010, Breaking Bad follows Walter White, a meek high school chemistry teacher who transforms into a ruthless player in the local methamphetamine drug trade, driven by a desire to financially provide for his family after being diagnosed with terminal lung cancer.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/Ser1/Breakingbad.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/s2post.jpg" alt="">
+                            <span class="movie-list-item-title">MONEY HEIST</span>
+                            <p class="movie-list-item-desc">This original Netflix series, originally titled La Casa de Papel, follows the Professor (Álvaro Morte), a criminal mastermind who brings eight thieves together to take hostages and lock themselves in the Royal Mint of Spain as he manipulates the police to carry out his plan.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/Ser2/moneyheist.html">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/prisonbreak.jpg" alt="">
+                            <span class="movie-list-item-title">PRISON BREAK</span>
+                            <p class="movie-list-item-desc">The series revolves around two brothers, Lincoln Burrows (Dominic Purcell) and Michael Scofield (Wentworth Miller); Burrows has been sentenced to death for a crime he did not commit, and Scofield devises an elaborate plan to help his brother escape prison and clear his name.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/Ser1/Breakingbad.html">Watch</button></a>
+                        </div>                        
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Peaky_Blinders.jpg" alt="">
+                            <span class="movie-list-item-title">PEAKY BLINDERS</span>
+                            <p class="movie-list-item-desc">Peaky Blinders is an epic following of a gangster family of Irish Traveller of Romani origin set in Birmingham, England, in 1919, several months after the end of the First World War in November 1918. </p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/Ser1/Breakingbad.html">Watch</button></a>
+                        </div>                        
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/got.jpg" alt="">
+                            <span class="movie-list-item-title">GAME OF THRONES</span>
+                            <p class="movie-list-item-desc">A Game of Thrones takes place over the course of one year on or near the fictional continent of Westeros. The story begins when King Robert visits the northern castle Winterfell to ask Ned Stark to be his right-hand assistant, or Hand of the King. The previous Hand, Jon Arryn, died under suspicious circumstances.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/Ser1/Breakingbad.html">Watch</button></a>
+                        </div>                        
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/b99.jpg" alt="">
+                            <span class="movie-list-item-title">BROOKLYN NINE NINE</span>
+                            <p class="movie-list-item-desc">Comedy series following the exploits of Det. Jake Peralta and his diverse, lovable colleagues as they police the NYPD's 99th Precinct.</p>
+                            <button class="movie-list-item-button"><a href="/moviepage/innermost/html/Ser1/Breakingbad.html">Watch</button></a>
+                        </div>
+                        
+                    </div>
+                    <i class="fas fa-chevron-right arrow" style="margin-top: 5%;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        var figure = $(".video").hover( hoverVideo, hideVideo );
+
+function hoverVideo(e) {  
+    $('video', this).get(0).play(); 
+}
+
+function hideVideo(e) {
+    $('video', this).get(0).pause(); 
+}
+</script>
+</body>
+
+</html>

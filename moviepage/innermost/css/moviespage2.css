@@ -1,0 +1,130 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.logo
+{
+    width: 50px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 20px;
+}
+
+.movie-title
+{
+    margin: 6%;
+    font-size: 30px;
+    color: #fff;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p1
+{
+    font-size: 18px;
+    line-height: 200%;
+}
+p2
+{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+}
+.casting img
+{
+    width: 85px;
+    height: 85px;
+    margin-right: 50px;
+}
+p,a
+{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+.cast
+{
+    float: left;
+    position: relative;
+}
+.trail
+{
+    margin-left: 6%;
+    margin-top: -5%;
+    font-size: 20px;
+    color: #fff;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.trail1
+{
+    margin-left: 6%;
+}
+
+.gen
+{
+    font-size: 18px;
+    margin-left: 6%;
+    color: #fff;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button
+{
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 7px 20px;
+    background-color: rgb(255, 120, 61);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 6%;
+    font-size: 30px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(255, 198, 11, 0.24),0 17px 50px 0 rgba(255, 212, 23, 0.19);
+}
+/*.button:hover {background-color: #3e8e41}*/
+.thumbnail img
+{
+    height: 500px;
+    margin-left: 70%;
+    margin-top: -35%;
+
+    box-shadow: rgb(0, 0, 0) -5px 5px 6px 0;
+    
+}
+h2
+{
+    font-size: 30px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 6%;
+    font-weight: bold;
+}
+.rat
+{
+    margin-left: 6%;
+    size: 10px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.review
+{
+    color: rgb(255, 194, 124);
+    margin-left: 6%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.checked {
+  color: orange;
+}

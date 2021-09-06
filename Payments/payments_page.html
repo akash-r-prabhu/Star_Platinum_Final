@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet"><title>PAYMENT</title>
+<style>
+  
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+  /* background-image: url(background.jpeg); */
+  background: rgb(34,193,195);
+  background: linear-gradient(139deg, rgba(34,193,195,1) 0%, rgba(42,6,6,1) 100%);
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+#writings{
+    color: #f2f2f2;
+}
+#writings p{
+    font-size: 25px;
+}
+.slide_down:hover {
+  box-shadow: inset 0 100px 0 0 #5e6bdd;
+}
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 #3ac975;
+}
+.button_slide {
+  color: #FFF;
+  border: 2px solid rgb(68, 54, 192);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #0254d8;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+</style>
+</head>
+<body>
+<a href="/homepage/homepage.html" class="button_slide slide_down" >HOME</a>
+<div id="writings">
+    <Center><h1 style="font-size: 30px; border-radius: 20px;" class="button_slide slide_right">STAR MEMBERSHIP</h1></Center>
+    <br>
+
+    <p style="text-align: center;">To enjoy unrestricted and adfree unlimited movies, series and anime with our premium membership</p>
+    <br><br>
+</div>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container" id="gg">
+      <form name="pay"  onsubmit="validation()" action="/homepage/homepage.html" class="pay_form">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" required id="fname" name="firstname" pattern="[a-zA-Z ]*" placeholder="Full Name">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" required  id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" placeholder="name@mexample.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" required id="adr" name="address" placeholder="Address">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text"required  id="city" name="city" placeholder="City">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text"required  id="state" name="state" placeholder="State">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="number"  required minlength="6" maxlength="6" id="zip" name="zip" placeholder="682025" style="font-size: 15px; padding: 5px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" required  name="cardname" pattern="[a-zA-Z ]*" placeholder="Name on Card">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" title="AAAA-BBBB-CCCC-DDDD" pattern="[1-9][0-9]{3}-[0-9]{4}-[0-9]{4}-[0-9]{4}"  id="ccnum" required name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <!-- <input type="date" id="expmonth"  required name="expmonth" placeholder="June"> -->
+            <select placeholder="MM" id="expmonth" required style="font-size: 15px; padding: 5px;">
+                <option name="" value="" style="display:none;">MM</option>
+                <option name="expmonth" value="Jan">01</option>
+                <option name="expmonth" value="Feb">02</option>
+                <option name="expmonth" value="Mar">03</option>
+                <option name="expmonth" value="Apr">04</option>
+                <option name="expmonth" value="May">05</option>
+                <option name="expmonth" value="Jun">06</option>
+                <option name="expmonth" value="Jul">07</option>
+                <option name="expmonth" value="Aug">08</option>
+                  <option name="expmonth" value="Sep">09</option>
+                <option name="expmonth" value="Oct">10</option>
+                <option name="expmonth" value="Nov">11</option>
+                <option name="expmonth" value="Dec">12</option>
+              </select>
+              
+              
+            <div class="row">
+              <div class="col-50">
+                  <br>
+                <label for="expyear">Exp Year</label>
+                <!-- <input type="date" id="expyear" required  name="expyear" placeholder="2030"> -->
+                <select placeholder="YYYY" id="expmonth" required style="font-size: 15px; padding: 5px;">
+                    <option name="" value="" style="display:none;">YYYY</option>
+                    <option name="expmonth " >2021</option>
+                    <option name="expmonth" >2022</option>
+                    <option name="expmonth" >2023</option>
+                    <option name="expmonth">2024</option>
+                    <option name="expmonth" >2025</option>
+                    <option name="expmonth" >2026</option>
+                    <option name="expmonth" >2027</option>
+                    <option name="expmonth" >2028</option>
+                    <option name="expmonth" >2029</option>
+                    <option name="expmonth" >2030</option>
+                    <option name="expmonth" >2031</option>
+                    <option name="expmonth" >2032</option>
+                  </select>
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv" title="cvv must be 3 digits only " required minlength="3" maxlength="3" pattern="[0-9]{3}" style="font-size: 15px; padding: 5px;"  name="cvv" placeholder="567">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing address
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn button_slide slide_down"  onclick="validation()">
+      </form>
+    </div>
+  </div>
+
+</body>
+<script>
+function validation(){  
+        var status=false;
+        var name=document.pay.name.value; 
+        var address=document.pay.adr.value; 
+        var email=document.pay.email.value; 
+        var city=document.pay.city.value;
+        var state=document.pay.state.value;
+        var zip=document.pay.zip.value;
+        var cname=document.pay.cname.value; 
+        var ccnum=document.pay.ccnum.value; 
+        // var expmonth=document.pay.cname.value; 
+        var cvv=document.pay.cnvv.value; 
+       
+        if (!name.match(/^[a-zA-Z]+$/)) 
+                    {
+                        alert('Only alphabets are allowed');
+                        return false;
+                    }
+        if (!cname.match(/^[a-zA-Z]+$/)) 
+                    {
+                        alert('Only alphabets are allowed');
+                        return false;
+                    }
+        if (!email.match( /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) 
+                    {
+                        alert('Email incorrect');
+                        return false;
+                    }
+        if(length(String(zip))!=6)
+            {
+                alert("Zip should be 6 digit");
+                status=false;
+            }
+        
+        if(NaN(ccnum))
+            {
+
+            }
+
+
+        return status;
+        }
+       
+</script>
+</html>
